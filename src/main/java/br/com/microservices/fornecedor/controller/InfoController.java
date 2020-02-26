@@ -1,5 +1,6 @@
 package br.com.microservices.fornecedor.controller;
 
+import br.com.microservices.fornecedor.model.InfoFornecedor;
 import br.com.microservices.fornecedor.service.InfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,7 +16,7 @@ public class InfoController {
     private InfoService infoService;
 
     @GetMapping("/{estado}")
-    public void getInfoPorEstado(@PathVariable String estado) {
-        infoService.getInfoPorEstado(estado);
+    public InfoFornecedor getInfoPorEstado(@PathVariable String estado) {
+        return infoService.getInfoPorEstado(estado);
     }
 }

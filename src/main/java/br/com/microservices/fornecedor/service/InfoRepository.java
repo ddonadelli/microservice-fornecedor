@@ -7,6 +7,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface InfoRepository extends CrudRepository<InfoFornecedor, Long> {
 
-    InfoFornecedor findbyEstado(String estado);
+    InfoFornecedor findByEstado(String estado);
 
 }

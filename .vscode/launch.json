@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-FornecedorApplication<fornecedor>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "br.com.microservices.fornecedor.FornecedorApplication",
+            "projectName": "fornecedor",
+            "args": ""
+        }
+    ]
+}
